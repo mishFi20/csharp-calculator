@@ -27,7 +27,7 @@ namespace Calculadora
 
         private void btn8_Click(object sender, EventArgs e)
         {
-
+            concatNumber("8");
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -63,6 +63,31 @@ namespace Calculadora
         private void btn4_Click(object sender, EventArgs e)
         {
             concatNumber("4");
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            concatNumber("5");
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            concatNumber("6");
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            concatNumber("7");
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            concatNumber("9");
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            concatNumber("0");
         }
     }
 }
