@@ -14,3 +14,4 @@ C:\Users\Lenovo\source\repos\Calculadora\Calculadora\obj\Debug\net8.0-windows\re
 C:\Users\Lenovo\source\repos\Calculadora\Calculadora\obj\Debug\net8.0-windows\Calculadora.pdb
 C:\Users\Lenovo\source\repos\Calculadora\Calculadora\obj\Debug\net8.0-windows\Calculadora.genruntimeconfig.cache
 C:\Users\Lenovo\source\repos\Calculadora\Calculadora\obj\Debug\net8.0-windows\ref\Calculadora.dll
+C:\Users\Lenovo\source\repos\Calculadora\Calculadora\obj\Debug\net8.0-windows\Calculadora.sourcelink.json
