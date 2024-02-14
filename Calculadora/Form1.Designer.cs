@@ -45,7 +45,7 @@
             btnMultiplicar = new Button();
             btnPunto = new Button();
             btnDividir = new Button();
-            button1 = new Button();
+            btnClean = new Button();
             SuspendLayout();
             // 
             // btnAdd
@@ -212,20 +212,22 @@
             btnDividir.UseVisualStyleBackColor = true;
             btnDividir.Click += btnDividir_Click;
             // 
-            // button1
+            // btnClean
             // 
-            button1.Location = new Point(244, 230);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 18;
-            button1.UseVisualStyleBackColor = true;
+            btnClean.Location = new Point(244, 230);
+            btnClean.Name = "btnClean";
+            btnClean.Size = new Size(75, 23);
+            btnClean.TabIndex = 18;
+            btnClean.Text = "Clean";
+            btnClean.UseVisualStyleBackColor = true;
+            btnClean.Click += btnClean_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btnClean);
             Controls.Add(btnDividir);
             Controls.Add(btnPunto);
             Controls.Add(btnMultiplicar);
@@ -269,6 +271,6 @@
         private Button btnMultiplicar;
         private Button btnPunto;
         private Button btnDividir;
-        private Button button1;
+        private Button btnClean;
     }
 }

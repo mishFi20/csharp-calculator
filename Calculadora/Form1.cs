@@ -122,5 +122,10 @@ namespace Calculadora
             this.txtResult.Text = "";
             this.op = "Division";
         }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            this.txtResult.Text = "";
+        }
     }
 }
