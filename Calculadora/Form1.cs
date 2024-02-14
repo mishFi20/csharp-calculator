@@ -48,12 +48,23 @@ namespace Calculadora
         private void button1_Click_1(object sender, EventArgs e)
         {
             int y = Int32.Parse(this.txtResult.Text);
-            int total = 0;
+            float total = 0;
 
             switch (this.op)
             {
                 case "add":
                     total = this.subtotal + y;
+                    break;
+
+                case "resta":
+                    total = this.subtotal - y;
+                    break;
+
+                case "multiplicacion":
+                    total = this.subtotal * y;
+                    break;
+                case "Division":
+                    total = this.subtotal / y;
                     break;
             }
 
@@ -88,6 +99,28 @@ namespace Calculadora
         private void btn0_Click(object sender, EventArgs e)
         {
             concatNumber("0");
+        }
+
+        private void btnRestar_Click(object sender, EventArgs e)
+        {
+            this.subtotal = Int32.Parse(this.txtResult.Text);
+            this.txtResult.Text = "";
+            this.op = "resta";
+        }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            this.subtotal = Int32.Parse(this.txtResult.Text);
+            this.txtResult.Text = "";
+            this.op = "multiplicacion";
+        }
+
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            this.subtotal = (int)float.Parse(this.txtResult.Text);
+            this.txtResult.Text = "";
+            this.op = "Division";
         }
     }
 }
