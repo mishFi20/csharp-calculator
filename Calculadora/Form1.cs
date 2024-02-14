@@ -55,9 +55,14 @@ namespace Calculadora
                 case "add":
                     total = this.subtotal + y;
                     break;
-            } 
+            }
 
             this.txtResult.Text = total.ToString();
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            concatNumber("4");
         }
     }
 }
