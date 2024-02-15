@@ -43,9 +43,9 @@
             btnEqual = new Button();
             btnRestar = new Button();
             btnMultiplicar = new Button();
-            btnPunto = new Button();
             btnDividir = new Button();
             btnClean = new Button();
+            btnPoint = new Button();
             SuspendLayout();
             // 
             // btnAdd
@@ -60,10 +60,12 @@
             // 
             // txtResult
             // 
-            txtResult.Location = new Point(63, 25);
+            txtResult.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtResult.Location = new Point(72, 65);
             txtResult.Name = "txtResult";
-            txtResult.Size = new Size(456, 23);
+            txtResult.Size = new Size(257, 35);
             txtResult.TabIndex = 1;
+            txtResult.TextAlign = HorizontalAlignment.Right;
             // 
             // btn7
             // 
@@ -195,13 +197,6 @@
             btnMultiplicar.UseVisualStyleBackColor = true;
             btnMultiplicar.Click += btnMultiplicar_Click;
             // 
-            // btnPunto
-            // 
-            btnPunto.Location = new Point(0, 0);
-            btnPunto.Name = "btnPunto";
-            btnPunto.Size = new Size(75, 23);
-            btnPunto.TabIndex = 17;
-            // 
             // btnDividir
             // 
             btnDividir.Location = new Point(340, 104);
@@ -222,14 +217,24 @@
             btnClean.UseVisualStyleBackColor = true;
             btnClean.Click += btnClean_Click;
             // 
+            // btnPoint
+            // 
+            btnPoint.Location = new Point(72, 230);
+            btnPoint.Name = "btnPoint";
+            btnPoint.Size = new Size(75, 23);
+            btnPoint.TabIndex = 19;
+            btnPoint.Text = ".";
+            btnPoint.UseVisualStyleBackColor = true;
+            btnPoint.Click += btnPoint_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(439, 284);
+            Controls.Add(btnPoint);
             Controls.Add(btnClean);
             Controls.Add(btnDividir);
-            Controls.Add(btnPunto);
             Controls.Add(btnMultiplicar);
             Controls.Add(btnRestar);
             Controls.Add(btnEqual);
@@ -269,8 +274,8 @@
         private Button btnEqual;
         private Button btnRestar;
         private Button btnMultiplicar;
-        private Button btnPunto;
         private Button btnDividir;
         private Button btnClean;
+        private Button btnPoint;
     }
 }
