@@ -127,5 +127,10 @@ namespace Calculadora
         {
             this.txtResult.Text = "";
         }
+
+        private void btnPoint_Click(object sender, EventArgs e)
+        {
+            concatNumber(".");
+        }
     }
 }
