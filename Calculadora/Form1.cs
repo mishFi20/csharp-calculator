@@ -2,7 +2,7 @@ namespace Calculadora
 {
     public partial class Form1 : Form
     {
-        public int subtotal = 0;
+        public float subtotal = 0;
         public string op = "";
         public Form1()
         {
@@ -20,7 +20,7 @@ namespace Calculadora
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.subtotal = Int32.Parse(this.txtResult.Text);
+            this.subtotal = float.Parse(this.txtResult.Text);
             this.txtResult.Text = "";
             this.op = "add";
         }
@@ -47,7 +47,7 @@ namespace Calculadora
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            int y = Int32.Parse(this.txtResult.Text);
+            float y = float.Parse(this.txtResult.Text);
             float total = 0;
 
             switch (this.op)
@@ -103,14 +103,14 @@ namespace Calculadora
 
         private void btnRestar_Click(object sender, EventArgs e)
         {
-            this.subtotal = Int32.Parse(this.txtResult.Text);
+            this.subtotal = float.Parse(this.txtResult.Text);
             this.txtResult.Text = "";
             this.op = "resta";
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
-            this.subtotal = Int32.Parse(this.txtResult.Text);
+            this.subtotal = float.Parse(this.txtResult.Text);
             this.txtResult.Text = "";
             this.op = "multiplicacion";
         }
