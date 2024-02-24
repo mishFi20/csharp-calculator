@@ -66,6 +66,9 @@ namespace Calculadora
                 case "Division":
                     total = this.subtotal / y;
                     break;
+                case "Raiz":
+                    total = (float)Math.Sqrt(subtotal);
+                    break;
             }
 
             this.txtResult.Text = total.ToString();
@@ -131,6 +134,13 @@ namespace Calculadora
         private void btnPoint_Click(object sender, EventArgs e)
         {
             concatNumber(".");
+        }
+
+        private void btnRaiz_Click(object sender, EventArgs e)
+        {
+            this.subtotal = float.Parse(this.txtResult.Text);
+            this.txtResult.Text = "";
+            this.op = "Raiz";
         }
     }
 }

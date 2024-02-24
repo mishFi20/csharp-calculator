@@ -46,6 +46,7 @@
             btnDividir = new Button();
             btnClean = new Button();
             btnPoint = new Button();
+            btnRaiz = new Button();
             SuspendLayout();
             // 
             // btnAdd
@@ -227,11 +228,22 @@
             btnPoint.UseVisualStyleBackColor = true;
             btnPoint.Click += btnPoint_Click;
             // 
+            // btnRaiz
+            // 
+            btnRaiz.Location = new Point(340, 77);
+            btnRaiz.Name = "btnRaiz";
+            btnRaiz.Size = new Size(75, 23);
+            btnRaiz.TabIndex = 20;
+            btnRaiz.Text = "Raiz Cuadrada";
+            btnRaiz.UseVisualStyleBackColor = true;
+            btnRaiz.Click += btnRaiz_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(439, 284);
+            Controls.Add(btnRaiz);
             Controls.Add(btnPoint);
             Controls.Add(btnClean);
             Controls.Add(btnDividir);
@@ -277,5 +289,6 @@
         private Button btnDividir;
         private Button btnClean;
         private Button btnPoint;
+        private Button btnRaiz;
     }
 }
